@@ -8,12 +8,13 @@ import Footer from "./Footer";
 import GetStarted from "./GetStarted";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-
+import Vedio from "./Vedio";
 function Technology() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <Vedio/>
          {/* <Technologyone /> */}
          <Technologythree />
          <Technologytwo />

@@ -37,7 +37,7 @@ const House = ({ img, price, address, bedrooms, bathrooms, space }) => {
           {/* ${30022} */}
           {/* $3000 */}
         </Typography>
-        <Typography variant="body2" sx={{ my: 2,fontSize:"18px",fontWeight:"300" }}>
+        <Typography variant="body2" sx={{ my: 1,fontSize:"25px",fontWeight:"800" }}>
           {address}
         </Typography>
 
@@ -61,7 +61,7 @@ const House = ({ img, price, address, bedrooms, bathrooms, space }) => {
             {/* <img 
             // src={bathroomsIcon}
              alt="bathroomssIcon" /> */}
-            <Typography variant="body2" sx={{ mt: 1 }}>
+            <Typography variant="h4" sx={{ mt: 0 }}>
               {bathrooms}
             </Typography>
           </InfoBox>
