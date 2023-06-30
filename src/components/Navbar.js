@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import DrawerComp from "./Drawer";
+import { Link, Navigate } from "react-router-dom";
 const NavbarLogo = styled("img")(({ theme }) => ({
   cursor: "pointer",
   [theme.breakpoints.down("md")]: {
@@ -50,12 +51,17 @@ const Navbar = () => {
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <Tab label="Home" />
-                <Tab label="About" />
-                <Tab label="Product " />
-                <Tab label="Services" />
-                <Tab label="Technology" />
-                <Tab label="Clients" />
+               
+                <Link  to="/"  style={{ textDecoration: 'none', color:"White" }}><Tab label="Home" /></Link>
+                <Link  style={{ textDecoration: 'none', color:"White" }}><Tab label="About" /></Link>
+                <Link style={{ textDecoration: 'none', color:"White" }}><Tab label="Services" /></Link>
+
+                <Link  style={{ textDecoration: 'none', color:"White" }}><Tab label="Product" /></Link>
+
+                <Link to="/technology" style={{ textDecoration: 'none', color:"White" }}><Tab label="Technology" /></Link>
+              
+                <Link to="/client" style={{ textDecoration: 'none', color:"White" }} ><Tab label="client" /></Link>
+
               </Tabs>
               {/* <Button sx={{ marginLeft: "auto" }} variant="contained">
                 Login
