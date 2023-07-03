@@ -1,72 +1,221 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import emailjs from 'emailjs-com';
+import { useEffect, useState } from 'react'
+import Notification from './Notification';
 
+// toast.configure()
+const emailValidator = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 
 function ContactForm() {
+  const errorObject = {
+    to_name: { valid: true, helperText: "Name required" },
+    to_email: { valid: true, helperText: "Email required" },
+    to_phonenumber: { valid: true, helperText: "Phonenumber required" },
+    message: { valid: true, helperText: "Message required" },
+    subject: { valid: true, helperText: "Subject required" },
+  }
+  const [errorObj, updateErrorObj] = useState(errorObject)
+  const [notify,setNotify] = useState({isOpen:false,message:'',type:''})
+  console.log("notify,setNotify",notify,setNotify)
+  const [contact ,setContact] = useState({
+    to_name :"",
+    to_email:"",
+    to_phonenumber:"",
+    message:"",
+    from_name:"",
+    subject:"",
+
+  })
+  const {
+    to_name,
+    to_email,
+    to_phonenumber,
+    message,
+    subject,
+  } = contact
+  const formValid = ()=>{
+    //  debugger;
+     let isValid = true
+     let obj={...errorObj}
+     if(to_name === ''){
+      obj.to_name.valid = false
+     isValid = false
+    }else{
+     obj.to_name.valid = true
+    }
+     if(to_email === ''){
+        obj.to_email.valid = false
+        isValid = false
+     }else{
+      let re = new RegExp(emailValidator);
+      obj.to_email.valid = re.test(to_email)
+      obj.to_email.helperText = !re.test(to_email)?"Invalid Email":obj.to_email.helperText
+      isValid = re.test(to_email)
+     }
+     if(to_phonenumber === ''){
+      obj.to_phonenumber.valid = false
+     isValid = false
+    }else{
+      obj.to_phonenumber.valid = true
+     }
+    if(message === ''){
+      obj.message.valid = false
+     isValid = false
+    }else{
+      obj.message.valid = true
+     }
+     if(subject === ''){
+      obj.subject.valid = false
+     isValid = false
+    }else{
+      obj.subject.valid = true
+     }
+     updateErrorObj(obj)
+     return isValid
+   }
+  const onSubmit = (e) => {
+    // console.log("e",e.target.name)
+//  alert("hai")
+    e.preventDefault();
+    let valid = formValid()
+    if (valid) {
+      try {
+    emailjs.send('service_g5toktc','template_hw5s2cf',contact,"PRBOZGXq1xFCpcrEu")
+    .then((result) => {
+      // toast.success('successful')
+      console.log("result",result)
+      setNotify({
+        isOpen:true,
+        message:'sent successfully',
+        type:'success'
+      })
+      // window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+ })
+} 
+catch (error) {
+  // toast.error('Runtime error')
+      console.log(error.text);
+      setNotify({
+        isOpen:true,
+        message:'please fill contact from',
+        type:'error'
+      })
+  };
+  setContact({
+    to_name :"",
+    to_email:"",
+    to_phonenumber:"",
+    message:"",
+    from_name:"",
+    subject:"",
+  })
+}
+}
+
+
+const onChange = (e) => {
+  let { name, value } = e.target
+    if(name === "to_name"||name === 'to_email'||name==="to_phonenumber" || name ==="message" || name ==="subject"){
+      fieldValidation(name)
+    }
+    setContact({ ...contact, [name]: value })
+};
+const fieldValidation = (input)=>{
+  let obj={...errorObj}
+  if(input&&input!==''){
+    obj[input].valid = true
+  }
+  updateErrorObj(obj)
+}
   return (
-    <div>
+    
+    <div style={{backgroundColor:"#f7f7f7" ,marginBottom:"10px"}}>
+     <Notification 
+     notify ={notify}
+     setNotify ={setNotify}
+     />
         <Typography sx={{fontSize:"32px",fontWeight:"400",fontFamily:"Poppins, sans-serif",textAlign:"center",paddingBottom:"30px",color:"#5777ba", marginBottom:"20px"}}>Contact</Typography>
         <Grid container columns={12}>
-        <Grid xs={12} sm={12} md={6}>
+        <Grid xs={12} sm={12} md={6} sx={{
+        paddingRight:"30px",
+        paddingLeft:"30px",
+        textAlign:'center'
+      }}>
           <div>
           <TextField
               id="standard-basic"
-              label="Your Name"
-              variant="standard"
+              placeholder="Your Name"
+              variant="outlined"
               required
-            // helperText={!errorObj.name.valid&&errorObj.name.helperText}
-              // error={!errorObj.name.valid}   name="name"
+              name="to_name"
+            helperText={!errorObj.to_name.valid&&errorObj.to_name.helperText}
+              error={!errorObj.to_name.valid}
               type="text"
-              sx={{ mt: 1,width:"100%" }}
-              // onChange={handleChange}
-              // value={name}
+              sx={{ mt: 1,width:"90%" }}
+              onChange={onChange}
+              value={contact.to_name}
             />
             <TextField
               id="standard-basic"
-              label="Your Email"
-              variant="standard"
+              placeholder="Your Email"
+              variant="outlined"
               required
-            // helperText={!errorObj.name.valid&&errorObj.name.helperText}
-              // error={!errorObj.name.valid}   name="name"
+              name="to_email"
+            helperText={!errorObj.to_email.valid&&errorObj.to_email.helperText}
+              error={!errorObj.to_email.valid}
               type="text"
-              sx={{ mt: 1,width:"100%" }}
-              // onChange={handleChange}
-              // value={name}
+              sx={{ mt: 1,width:"90%" }}
+              onChange={onChange}
+              value={contact.to_email}
             />
             <TextField
               id="standard-basic"
-              label="Your Phone Number"
-              variant="standard"
+              placeholder="Your Phone Number"
+              variant="outlined"
               required
-            // helperText={!errorObj.name.valid&&errorObj.name.helperText}
-              // error={!errorObj.name.valid}   name="name"
+              name="to_phonenumber"
+            helperText={!errorObj.to_phonenumber.valid&&errorObj.to_phonenumber.helperText}
+              error={!errorObj.to_phonenumber.valid}   
               type="text"
-              sx={{ mt: 1,width:"100%" }}
-              // onChange={handleChange}
-              // value={name}
+              sx={{ mt: 1,width:"90%" }}
+              onChange={onChange}
+              value={contact.to_phonenumber}
             />
             <TextField
               id="standard-basic"
-              label="Subject"
-              variant="standard"
+              placeholder="Subject"
+              variant="outlined"
               required
-            // helperText={!errorObj.name.valid&&errorObj.name.helperText}
-              // error={!errorObj.name.valid}   name="name"
+              name="subject"
+            helperText={!errorObj.subject.valid&&errorObj.subject.helperText}
+              error={!errorObj.subject.valid} 
               type="text"
-              sx={{ mt: 1,width:"100%" }}
-              // onChange={handleChange}
-              // value={name}
+              sx={{ mt: 1,width:"90%" }}
+              onChange={onChange}
+              value={contact.subject}
             />
             <TextField
           id="outlined-multiline-static"
           multiline
            placeholder="Message"
+           name="message"
+           helperText={!errorObj.message.valid&&errorObj.message.helperText}
+              error={!errorObj.message.valid} 
           rows={4}
+          onChange={onChange}
+          sx={{ mt: 1,width:"90%" }}
+          value={contact.message}
         />
+
           </div>
+      <Button variant="outlined" onClick={onSubmit} sx={{marginTop:3,marginBottom:3}} >Send Message</Button>
+
+
           </Grid>
-          <Grid xs={12} sm={12} md={6}>
+          <Grid xs={12} sm={12} md={6} sx={{paddingRight:"15px",paddingLeft:"15px"}}>
               <Grid container sx={{display:'flex',flexWrap:"wrap",marginTop:'calc(-1 * var(--bs-gutter-y))',marginRight:"calc(-.5 * var(--bs-gutter-x))",marginLeft:"calc(-.5 * var(--bs-gutter-x))"}}>
                 <Grid xs={12} sm={12} md={6}>
                   <Grid sx={{padding:"20px 40px",

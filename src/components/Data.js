@@ -1,0 +1,6 @@
+export const FoodApp = "FoodApp"
+export const JewelleryApp = "JewelleryApp"
+export const EventsApp = "EventsApp"
+export const GreengroceryApp = "GreengroceryApp"
+export const MusicApp = "MusicApp"
+export const WeddingApp = "WeddingApp"
