@@ -11,11 +11,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Webone />
-      <Webtwo />
-      <Webthree />
-      <Webfour />
-      <Webfive />
+      
          <Footer />
         
     </div>

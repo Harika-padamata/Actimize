@@ -3,7 +3,6 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import { Icon } from '@iconify/react';
 
-
 // import fbIcon from "../media/fbicon.png";
 // import twitterIcon from "../media/twittericon.png";
 // import linkedinIcon from "../media/linkedinicon.png";
@@ -30,23 +29,23 @@ const Footer = () => {
 
   const FooterLink = styled("span")(({ theme }) => ({
     fontSize: "13px",
-    color: "Black",
+    color: "white",
     fontWeight: "700",
     cursor: "pointer",
     "&:hover": {
-      color: "Black",
+      color: "white",
     },
   }));
 
   return (
-    <Box sx={{ py: 3,backgroundColor: "" }}>
+    <Box sx={{ py: 3,backgroundColor: "#666666" }}>
     
         <CustomContainer>
           <Box>
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "Black",
+                color: "white",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -74,7 +73,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "Black",
+                color: "white",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -105,7 +104,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "Black",
+                color: "white",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -128,7 +127,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "Black",
+                color: "white",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -158,25 +157,18 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "Black",
+                color: "white",
                 fontWeight: "700",
                 mb: 2,
               }}
             >
              Connect With Us
             </Typography>
-          
-           
-            
-
-           
-            
-
             <IconBox >
-              <Icon icon="gg:facebook" width="35" height="35" color="Black" />
-              <Icon icon="fe:messanger" width="35" height="35" color="Black" />
-              <Icon  icon="basil:linkedin-solid"width="35" height="35" color="Black" />
-              <Icon icon="mdi:twitter" width="35" height="35"  color="Black" />
+              <Icon icon="gg:facebook" width="35" height="35" color="white" />
+              <Icon icon="fe:messanger" width="35" height="35" color="white" />
+              <Icon  icon="basil:linkedin-solid"width="35" height="35" color="white" />
+              <Icon icon="mdi:twitter" width="35" height="35"  color="white" />
             </IconBox>   
           </Box>
         </CustomContainer>
@@ -184,5 +176,4 @@ const Footer = () => {
     </Box>
   );
 };
-
 export default Footer;
