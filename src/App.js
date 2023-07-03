@@ -22,7 +22,7 @@ function App() {
           <Route path='products/:name' exact element={<ProductsInnerPage/>}/>
           <Route path='services' exact element={<Services/>}/>
           <Route path='services/:name' exact element={<ServicesInnerPage/>}/>
-          <Route path="Technology"  exact element={ <Technology/> } />
+          <Route path="technology"  exact element={ <Technology/> } />
           <Route path="technology/Microsoft"  exact element={ <Microsoft/> } />
           <Route path="Client"  exact element={ <Client/> } />
           <Route path="client/acceldata"  exact element={ <Acceldata/> } />
