@@ -104,7 +104,7 @@ Actimize and Microsoft Modernise Spark New Zealand’s Corporate Functions to Ac
               <Typography
                 sx={{ fontSize: "15px", color: "White", fontWeight: "700", marginTop:"60px" }}
               >
-       REF-OR-M Solution – Modern CX for Utilities
+       REF-OR-M Solution – Modern CX for Utilities to
 
               </Typography>
               <Typography
