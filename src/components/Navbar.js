@@ -67,9 +67,8 @@ const Navbar = () => {
           <Link  to="/aboutus"  style={{ textDecoration: 'none', color:"White" }}><Tab label="About us" /></Link>
           <Link  to="/products"  style={{ textDecoration: 'none', color:"White" }}><Tab label="Products" /></Link>
           <Link  to="/services"  style={{ textDecoration: 'none', color:"White" }}><Tab label="Services" /></Link>
-        
-                <Tab label="Technology" />
-                <Tab label="Clients" />
+          <Link to="/technology" style={{ textDecoration: 'none', color:"White" }}><Tab label="Technology" /></Link>            
+                <Link to="/client" style={{ textDecoration: 'none', color:"White" }} ><Tab label="client" /></Link>
               </Tabs>
               {/* <Button sx={{ marginLeft: "auto" }} variant="contained">
                 Login
