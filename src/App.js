@@ -6,7 +6,11 @@ import Products from './components/Products';
 import ProductsInnerPage from './components/ProductsInnerPage';
 import Services from './components/Services';
 import ServicesInnerPage from './components/ServicesInnerPage';
-
+import ImageSlider from "./components/ImageSlider";
+import Technology from "./components/Technology";
+import Microsoft from "./components/Microsoft";
+import Client from "./components/Client";
+import Acceldata from "./components/Acceldata";
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
           <Route path='products/:name' exact element={<ProductsInnerPage/>}/>
           <Route path='services' exact element={<Services/>}/>
           <Route path='services/:name' exact element={<ServicesInnerPage/>}/>
+          <Route path="Technology"  exact element={ <Technology/> } />
+          <Route path="technology/Microsoft"  exact element={ <Microsoft/> } />
+          <Route path="Client"  exact element={ <Client/> } />
+          <Route path="client/acceldata"  exact element={ <Acceldata/> } />
       </Routes>
       
     </div>
