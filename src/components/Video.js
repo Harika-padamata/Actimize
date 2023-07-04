@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
-import ReactPlayer from 'react-player'
+
 import "../App.css"
 
 function Vedio() {

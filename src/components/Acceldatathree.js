@@ -130,7 +130,7 @@ function Acceldatathree() {
         variant:"outlined",
         p: 5,
        
-        marginTop:0,
+        marginBottom:10,
         backgroundColor:"#17275F",
         borderRadius: 8, 
       }}
