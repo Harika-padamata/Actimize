@@ -14,7 +14,7 @@ function Technology() {
     <div>
       <Navbar />
       {/* <Hero /> */}
-      <Vedio/>
+      <Vedio/> 
          {/* <Technologyone /> */}
          <Technologythree />
          <Technologytwo />
