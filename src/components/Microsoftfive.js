@@ -146,7 +146,7 @@ Actimize and Microsoft Modernise Spark New Zealand’s Corporate Functions to Ac
                 sx={{ fontSize: "13px", color: "White", fontWeight: "500", my: 3 }}
               >
                 Digitize end-to-end workflow of communications between Backoffice & Store Associates
-Infosys Powerhouse – CoE Governance
+Infosys Powerhouse – CoE Governance 
               </Typography>
 
               <Typography
