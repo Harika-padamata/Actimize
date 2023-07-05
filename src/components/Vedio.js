@@ -5,7 +5,7 @@ import "../App.css"
 import { Box, Container } from "@mui/system";
 function Vedio() {
   return (
-    <Container>
+ 
         <Box sx={{marginTop:"25px"}}>
     <div>
          <div style={{position:"relative",zIndex:'0',paddingTop:"200px",paddingBottom:"200px"}}>
@@ -76,7 +76,7 @@ function Vedio() {
         </Vedio> */}
     </div>
     </Box>
-    </Container>
+  
   )
 }
 
