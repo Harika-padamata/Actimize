@@ -11,7 +11,7 @@ function Aboutus() {
   return (
     <div>
         <Navbar/>
-        {/* <BannerAbout/> */}
+        <BannerAbout/>
         <Board/>
         <Awards/>
         <Value/>
