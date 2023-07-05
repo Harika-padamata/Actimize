@@ -13,8 +13,8 @@ function Technology() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      {/* <Vedio/>  */}
+      {/* <Hero /> */}
+      <Vedio/> 
          {/* <Technologyone /> */}
          <Technologythree />
          <Technologytwo />
