@@ -10,7 +10,7 @@ function Homepage() {
   return (
     <>
     <Navbar/>
-    {/* <Vedio/> */}
+    <Vedio/>
     <SuccesStory/>
     <Ourservices/>
     <ContactForm/>
