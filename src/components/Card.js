@@ -9,6 +9,11 @@ import { useEffect, useState } from 'react'
 
 export default function ActionAreaCard() {
   const [first_card ,setFirst_card] = useState(false)
+  const [second_card ,setSecond_card] = useState(false)
+  const [third_card ,setThird_card] = useState(false)
+  const [fourth_card ,setFourth_card] = useState(false)
+  const [fifth_card ,setFifth_card] = useState(false)
+  const [sixth_card ,setSixth_card] = useState(false)
 const [ isHovered, setIsHovered ] = useState( false );
 
   return (
@@ -38,10 +43,10 @@ const [ isHovered, setIsHovered ] = useState( false );
           <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
           <CardActionArea 
-          // onMouseOver={ handleMouseOver }
-          // onMouseOut={ handleMouseOut }
+          onMouseOver={()=>{setSecond_card(true)}}
+          onMouseOut={ ()=>{setSecond_card(false)} }
           >
-            { isHovered
+            { second_card
                     ?  <img src='https://www.analyticsinsight.net/wp-content/uploads/2020/08/143-1024x559.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -55,8 +60,12 @@ const [ isHovered, setIsHovered ] = useState( false );
           </Grid> 
           <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
-          <CardActionArea>
-        
+          <CardActionArea
+          onMouseOver={()=>{setThird_card(true)}}
+          onMouseOut={ ()=>{setThird_card(false)} }
+          >
+            { third_card
+                    ?  <img src='https://www.plm.automation.siemens.com/media/global/en/cloud-ready-applications-640x360_tcm27-63234.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
           CLOUD APPLICATIONS 
@@ -64,14 +73,19 @@ const [ isHovered, setIsHovered ] = useState( false );
           <Typography variant="body2" color="text.secondary">
           Cloud app development implies building apps that run in the cloud and may leverage cloud features and services offered by cloud vendors.
           </Typography>
-        </CardContent>
+        </CardContent>}
       </CardActionArea>
 </Card>
 
           </Grid>
           <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
-          <CardActionArea>
+          <CardActionArea
+          onMouseOver={()=>{setFourth_card(true)}}
+          onMouseOut={ ()=>{setFourth_card(false)} }
+          >
+            { fourth_card
+                    ?  <img src='https://venuearc.com/wp-content/uploads/2022/06/SaaS-Product.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
        
        <CardContent>
          <Typography gutterBottom variant="h5" component="div">
@@ -80,14 +94,19 @@ const [ isHovered, setIsHovered ] = useState( false );
          <Typography variant="body2" color="text.secondary">
          We also offer end-to-end SaaS development services.We combine quick product evolution with code quality and stability,as well as conversion-optimized UX/UI design.
          </Typography>
-       </CardContent>
+       </CardContent>}
      </CardActionArea>
 </Card>
 
           </Grid>
           <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
-          <CardActionArea>
+          <CardActionArea
+          onMouseOver={()=>{setFifth_card(true)}}
+          onMouseOut={ ()=>{setFifth_card(false)} }
+          >
+            { fifth_card
+                    ?  <img src='https://laqshyainfosoft.com/images/side-banner/desktop-application.png'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
           DESKTOP APPLICATIONS
@@ -96,13 +115,18 @@ const [ isHovered, setIsHovered ] = useState( false );
           <Typography variant="body2" color="text.secondary">
           Cross-platform desktop app development services focus on building desktop software for Mac, Windows, and Linux, and upgrading it with new functionality.
           </Typography>
-        </CardContent>
+        </CardContent>}
       </CardActionArea>
 </Card>
           </Grid>
           <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
-          <CardActionArea>
+          <CardActionArea
+          onMouseOver={()=>{setSixth_card(true)}}
+          onMouseOut={ ()=>{setSixth_card(false)} }
+          >
+            { sixth_card
+                    ?  <img src='https://thumbs.dreamstime.com/b/software-testing-internet-business-technology-concept-143071525.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
           TESTING
@@ -110,7 +134,7 @@ const [ isHovered, setIsHovered ] = useState( false );
           <Typography variant="body2" color="text.secondary">
           We rigorously follow automated testing techniques for making bug free applications.
           </Typography>
-        </CardContent>
+        </CardContent>}
       </CardActionArea>
 </Card>
           </Grid>
