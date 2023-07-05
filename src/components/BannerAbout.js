@@ -93,9 +93,7 @@ function BannerAbout() {
                 backgroundImage:'none'
             }}>
  {matches ?<img className='star' src='https://www.zaptechsolutions.com/wp-content/uploads/2016/08/zaptech-banner.jpg' style ={{margin:"auto",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"140%",height:"100%",transform:"translate(0%, -50%)"}}></img>:
-           <img className='star' src='https://www.zaptechsolutions.com/wp-content/uploads/2016/08/zaptech-banner.jpg' style ={{margin:"auto",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"100%",height:"100%",transform:"translate(0%, -50%)"}}></img>}        {/* <video style ={{margin:"auto",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"auto",height:"801.766px",transform:"translate(0%, -50%)"}} loop={true} autoPlay muted >
-              <source src="../../images/bannervedio.mp4" type="video/mp4"></source>
-          </video>  */}
+           <img className='star' src='https://www.zaptechsolutions.com/wp-content/uploads/2016/08/zaptech-banner.jpg' style ={{margin:"auto",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"100%",height:"100%",transform:"translate(0%, -50%)"}}></img>}      
           </div>
           <div className='content' style={{paddingLeft:'15px',paddingRight:'15px'}}>
             <div  style={{
