@@ -10,7 +10,8 @@ function Support() {
         paddingLeft: 'calc(var(bsGuttery) * .5)',
         marginRight: 'auto',
         marginLeft: 'auto',
-        marginBottom:'10px'}}>
+        marginBottom:'10px',
+        marginTop:'10px'}}>
     <div style={{position: 'relative',
     zIndex: 1,
     borderRadius: "30px",

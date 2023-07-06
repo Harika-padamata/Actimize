@@ -33,8 +33,8 @@ console.log(i)
     {data.map((item,index) =>{
       console.log("id",item.id)
       return(
-    <Grid sx={{padding:'20px'}} xs={12} sm={4}>
-        <Card><CardActionArea>
+    <Grid sx={{padding:'20px'}} xs={12} sm={4} md={4}>
+        <Card sx={{height:'100%'}}><CardActionArea>
           <div className='avatarcontent'>
           <Icon className='avatarimg' icon={item.image} />
 

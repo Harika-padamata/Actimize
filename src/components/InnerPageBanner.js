@@ -34,7 +34,7 @@ function InnerPageBanner() {
                 backgroundPosition:"0% 50%",
                 backgroundImage:'none'
             }}>
-              <img style ={{position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"100%",height:'100%',transform:"translate(0%, -50%)"}}  src={randompics[param.name]}></img>
+              <img style ={{objectFit:"cover",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"100%",height:'100%',transform:"translate(0%, -50%)"}}  src={randompics[param.name]}></img>
         {/* <video style ={{margin:"auto",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"auto",height:"801.766px",transform:"translate(0%, -50%)"}} loop={true} autoPlay muted >
               <source src="../../images/bannervedio.mp4" type="video/mp4"></source>
           </video>  */}
