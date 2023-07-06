@@ -2,7 +2,6 @@ import { Button, styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import Stack from '@mui/material/Stack';
-// import { experimentalStyled as styled } from '@mui/material/styles';
 import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -14,11 +13,6 @@ import RollerSkatingOutlinedIcon from '@mui/icons-material/RollerSkatingOutlined
 import GppGoodOutlinedIcon from '@mui/icons-material/GppGoodOutlined';
 import DeleteIcon from '@mui/icons-material/Delete';
 import {  Link } from "react-router-dom";
-
-
-// import fbIcon from "../media/fbicon.png";
-// import twitterIcon from "../media/twittericon.png";
-// import linkedinIcon from "../media/linkedinicon.png";
 
 const Microsoftfive = () => {
   const CustomContainer = styled(Box)(({ theme }) => ({
@@ -64,7 +58,7 @@ const Microsoftfive = () => {
       <CustomContainer >
       <Grid container spacing={{ xs: 4, md: 8 }} columns={{ xs: 4, sm: 8, md: 16 }}>
       
-      <Grid item xs={5} sm={4} md={5} >
+      <Grid item xs={5} sm={8} md={5} >
              
          
          <Stack direction="row"textDecoration= 'none' spacing={0}>
@@ -85,7 +79,7 @@ const Microsoftfive = () => {
         
        
        </Grid>
-       <Grid item xs={5} sm={4} md={5} >
+       <Grid item xs={5} sm={8} md={5} >
              
          
              <Stack direction="coloum"textDecoration= 'none' spacing={5}>
@@ -132,7 +126,7 @@ Actimize and Microsoft Modernise Spark New Zealand’s Corporate Functions to Ac
             
            
            </Grid>
-           <Grid item xs={5} sm={4} md={5} >
+           <Grid item xs={5} sm={8} md={5} >
              
          
              <Stack direction="row"textDecoration= 'none' spacing={0}>

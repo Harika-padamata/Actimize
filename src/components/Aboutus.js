@@ -17,7 +17,6 @@ function Aboutus() {
         <Value/>
         <Location/>
         <Footer/>
-        
     </div>
   )
 }

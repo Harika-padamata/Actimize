@@ -103,6 +103,7 @@ const properties = [
       //   bathrooms: 3,
       //   space: 3000,
       }, 
+      
    
   ];
 

@@ -61,10 +61,10 @@ const Clientfour = () => {
 
   const StyledWrapper = styled(Box)(({ theme }) => ({
     [theme.breakpoints.up("md")]: {
-      paddingTop: "50%",
+      paddingTop: "70%",
     },
     [theme.breakpoints.down("md")]: {
-      paddingTop: "30%",
+      paddingTop: "50%",
     },
     width: "80%",
   }));
@@ -88,10 +88,10 @@ const Clientfour = () => {
 
     cursor: "pointer",
     [theme.breakpoints.up("md")]: {
-      height: 353,
+      height: 333,
     },
     [theme.breakpoints.down("md")]: {
-      height: 200,
+      height: 220,
     },
     "&:hover": {
       opacity: 0.8,
@@ -127,7 +127,7 @@ const Clientfour = () => {
         <CustomBox>
        
 
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: "#f5ad42" }}>
+        <List sx={{ width: '100%', maxWidth: 820,bgcolor: "#f5ad42" }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="https://dynamicmedia.accenture.com/is/image/accenture/Homepage_insights_Evolution-then-Revolution_top-marque_447x447?qlt=85&wid=320&ts=1686781293639&$auto-jpg$&fit=constrain&dpr=off" />
@@ -144,7 +144,7 @@ const Clientfour = () => {
               >
                 Ali Connors
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+              {" — I'll be in your neighborhood doing with the regration errands this…"}
             </React.Fragment>
           }
         />
@@ -166,7 +166,7 @@ const Clientfour = () => {
               >
                 Ali Connors
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+              {" — I'll be in your neighborhood doing errands going tomarties of loyal  end of the point this…"}
             </React.Fragment>
           }
         />
@@ -189,7 +189,7 @@ const Clientfour = () => {
               >
                 Ali Connors
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+              {" — I'll be in your neighborhood to reaction of whole doing errands this…"}
             </React.Fragment>
           }
         />
@@ -260,6 +260,7 @@ const Clientfour = () => {
                 to Scott, Alex, Jennifer
               </Typography>
               {" — Wish I could come, but I'm out of town this…"}
+              {" — Wish I could come, but I'm out of town this…"}
             </React.Fragment>
           }
         />
@@ -282,6 +283,7 @@ const Clientfour = () => {
                 Sandra Adams
               </Typography>
               {' — Do you have Paris recommendations? Have you ever…'}
+              {' — Do you have Paris recommendations? Have '}
             </React.Fragment>
           }
         />
@@ -294,34 +296,34 @@ const Clientfour = () => {
              alt="house" style={{ maxWidth: "100%" }} />
           </ImgContainer> */}
           <Grid container direction={"row"} columnSpacing={0} rowSpacing={0}>
-        <Grid item md={5} xs={6}>
+        <Grid item md={6} xs={6}>
           <StyledCard 
           sx={{ backgroundImage: `url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/future-work2023-thumb.jpg)` }}
           >
             <StyledWrapper>
-              <StyledTypography>The Future of Work 2023 Report </StyledTypography>
+              <StyledTypography>The Future of Work  </StyledTypography>
             </StyledWrapper>
           </StyledCard>
         </Grid>
-        <Grid item md={5} xs={6}>
+        <Grid item md={6} xs={6}>
           <StyledCard 
           sx={{ backgroundImage: `url(https://www.infosys.com/content/dam/infosys-web/en/about/esg-radar-report/esg-thumb.jpg)` }}
           >
             <StyledWrapper>
-            <StyledTypography>Actimize Q4 FY23 Results </StyledTypography>
+            <StyledTypography>Actimize Q4 FY23  </StyledTypography>
             </StyledWrapper>
           </StyledCard>
         </Grid>
-        <Grid item md={5} xs={6}>
+        <Grid item md={6} xs={6}>
           <StyledCard 
           sx={{ backgroundImage: `url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/banner-images/quarter-results-q4fy23-thumb.jpg)` }}
           >
             <StyledWrapper>
-            <StyledTypography>Actimize Q4 FY23 Results </StyledTypography>
+            <StyledTypography>Actimize Q4 FY23  </StyledTypography>
             </StyledWrapper>
           </StyledCard>
         </Grid>
-        <Grid item md={5} xs={6}>
+        <Grid item md={6} xs={6}>
           <StyledCard 
           sx={{ backgroundImage: `url(https://dynamicmedia.accenture.com/is/image/accenture/accenture-arjun-bedi-575x444?qlt=85&wid=1024&ts=1686340472596&fit=constrain&dpr=off)` }}
           >
@@ -336,41 +338,7 @@ const Clientfour = () => {
         
       </Grid>
         </CustomBox>
-{/* 
-        <TextFlexbox>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <LargeText>2500+</LargeText>
-            <SmallText>Homes For Sale</SmallText>
-          </Box>
 
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <LargeText>3000+</LargeText>
-            <SmallText>Properties Rented</SmallText>
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <LargeText>3500+</LargeText>
-            <SmallText>Homes Sold</SmallText>
-          </Box>
-        </TextFlexbox> */}
       </Container>
     </Box>
   );
