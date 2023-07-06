@@ -7,11 +7,11 @@ import { useNavigate,useParams} from 'react-router-dom'
 import { Icon } from '@iconify/react';
 const data = [
     {id:1,param:"Web Development",name:"webDevelopment",content:"Our developers design professional websites that allow businesses to present their offerings to their customers in a comprehensive way.",image:'fluent:document-chevron-double-20-regular'},
-    {id:2,param:"Mobile App",name:"mobileApp",content:"If you are looking for a mobile application for android and ios, come to a step forward and connect with us. we design and develop creative applications.",image:'fluent-emoji-high-contrast:mobile-phone'},
+    {id:2,param:"Mobile App",name:"mobileApp",content:"If you are looking for a mobile application for android and ios, connect with us. we design and develop creative applications.",image:'fluent-emoji-high-contrast:mobile-phone'},
     {id:3,param:"UI & UX",name:"UI&UX",content:"To give our customers a great user experience, our UI and UX developers interact with them to understand their needs and develop beautiful designs.",image:'tabler:ux-circle'},
     {id:4,param:"Digital Marketing",name:"digitalMarketing",content:"For single restaurants and restaurant chains looking to offer food delivery online, our feature-rich online delivery application is highly customizable and easy to use.",image:'system-uicons:target'},
     {id:5,param:"Testing",name:"testing",content:"For single restaurants and restaurant chains looking to offer food delivery online, our feature-rich online delivery application is highly customizable and easy to use.",image:'ei:like'},
-    {id:6,param:"WhatsApp Marketing",name:"whatsAppMarketing",content:"For single restaurants and restaurant chains looking to offer food delivery online, our feature-rich online delivery application is highly customizable and easy to use.",image:'bi:whatsapp'},
+    {id:6,param:"WhatsApp Marketing",name:"whatsAppMarketing",content:"For single restaurants and restaurant chains looking to offer food delivery online,Application is easy to use.",image:'bi:whatsapp'},
 ]  
 function ServicesContent() {
   const navigate = useNavigate()
