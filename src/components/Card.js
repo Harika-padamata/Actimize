@@ -19,7 +19,7 @@ const [ isHovered, setIsHovered ] = useState( false );
   return (
     <div>
       <Grid container columns={12}>
-        <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
+        <Grid className='service_res' xs={12} sm={4} md={4} lg={4}  sx={{padding:"30px"}}>
         <Card id='first_card' sx={{width:'100%',height:'16rem'}}>
         <CardActionArea
         onMouseOver={()=>{setFirst_card(true)}}
@@ -27,9 +27,9 @@ const [ isHovered, setIsHovered ] = useState( false );
         >
        { first_card
                     ?  <img src='https://media.fuzia.com/assets/uploads/images/co_brand_1/article/2021/web2-1640671232.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
-                    <CardContent sx={{display:'flex'}}>
+                    <CardContent >
       <div>
-      <Typography gutterBottom variant="h5" component="div">
+      <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'auto'}}>
       WEB APPLICATIONS
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -40,7 +40,7 @@ const [ isHovered, setIsHovered ] = useState( false );
       </CardActionArea>
 </Card>
           </Grid>
-          <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
+          <Grid className='service_res' xs={12} sm={4} md={4} lg={4}  sx={{padding:"30px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
           <CardActionArea 
           onMouseOver={()=>{setSecond_card(true)}}
@@ -49,7 +49,7 @@ const [ isHovered, setIsHovered ] = useState( false );
             { second_card
                     ?  <img src='https://www.analyticsinsight.net/wp-content/uploads/2020/08/143-1024x559.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+      <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'auto'}}>
         MOBILE APPS
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -58,7 +58,7 @@ const [ isHovered, setIsHovered ] = useState( false );
     </CardActionArea>
 </Card>
           </Grid> 
-          <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
+          <Grid className='service_res' xs={12} sm={4} md={4} lg={4} sx={{padding:"30px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
           <CardActionArea
           onMouseOver={()=>{setThird_card(true)}}
@@ -67,7 +67,7 @@ const [ isHovered, setIsHovered ] = useState( false );
             { third_card
                     ?  <img src='https://www.plm.automation.siemens.com/media/global/en/cloud-ready-applications-640x360_tcm27-63234.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+           <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'auto'}}>
           CLOUD APPLICATIONS 
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -78,7 +78,7 @@ const [ isHovered, setIsHovered ] = useState( false );
 </Card>
 
           </Grid>
-          <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
+          <Grid className='service_res' xs={12} sm={4} md={4} lg={4}  sx={{padding:"30px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
           <CardActionArea
           onMouseOver={()=>{setFourth_card(true)}}
@@ -88,7 +88,7 @@ const [ isHovered, setIsHovered ] = useState( false );
                     ?  <img src='https://venuearc.com/wp-content/uploads/2022/06/SaaS-Product.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
        
        <CardContent>
-         <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'auto'}}>
          SAAS PRODUCTS
          </Typography>
          <Typography variant="body2" color="text.secondary">
@@ -99,7 +99,7 @@ const [ isHovered, setIsHovered ] = useState( false );
 </Card>
 
           </Grid>
-          <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
+          <Grid className='service_res' xs={12} sm={4} md={4} lg={4}  sx={{padding:"30px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
           <CardActionArea
           onMouseOver={()=>{setFifth_card(true)}}
@@ -108,7 +108,7 @@ const [ isHovered, setIsHovered ] = useState( false );
             { fifth_card
                     ?  <img src='https://laqshyainfosoft.com/images/side-banner/desktop-application.png'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'auto'}}>
           DESKTOP APPLICATIONS
 
           </Typography>
@@ -119,7 +119,7 @@ const [ isHovered, setIsHovered ] = useState( false );
       </CardActionArea>
 </Card>
           </Grid>
-          <Grid className='service_res' xs={12} sm={4}  sx={{padding:"50px"}}>
+          <Grid className='service_res' xs={12} sm={4} md={4} lg={4}  sx={{padding:"30px"}}>
           <Card sx={{width:'100%',height:'16rem'}}>
           <CardActionArea
           onMouseOver={()=>{setSixth_card(true)}}
@@ -128,7 +128,7 @@ const [ isHovered, setIsHovered ] = useState( false );
             { sixth_card
                     ?  <img src='https://thumbs.dreamstime.com/b/software-testing-internet-business-technology-concept-143071525.jpg'style={{minHeight:'100%',maxWidth:'100%',height:'16rem'}}></img>:
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'auto'}}>
           TESTING
           </Typography>
           <Typography variant="body2" color="text.secondary">
