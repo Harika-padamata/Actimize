@@ -15,6 +15,7 @@ function Value() {
                 </div>
             </div>
         </div>
+        
         <Grid container  sx={{textAlign:"center",paddingLeft:'3rem',paddingRight:'3rem',marginTop:"3%"}}>
             <Grid xs={12} sm={6} sx={{position:'relative'}}>
             <img src='https://media.istockphoto.com/id/1345445938/photo/businessman-holding-virtual-light-bulb-and-half-brain-on-blue-bokeh-background-smart-thinking.jpg?s=612x612&w=0&k=20&c=cPUUP6u-sYqnfPs7MWV9TB5N-ZefXxAFjDWvG2akcfs=' style={{height:'100%',width:'100%',objectFit:'cover'}}></img>
