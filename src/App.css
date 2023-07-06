@@ -3,16 +3,6 @@
    max-width: 1200px ;
   }
 }
-/* @media only screen and (min-width: 1440px) {
-  .videocontent{
-   max-width: 1440px !important;
-  }
-} */
-@media only screen and (min-width: 2560px) {
-  .videocontent{
-   width: 100% !important;
-  }
-}
 @media only screen and (min-width: 1098px) {
   .story_container{
     padding-left: 6rem;
@@ -72,7 +62,7 @@
   }
 }
 .content{
-  min-width: 290px;
+  min-width: 300px;
   /* max-width: 480px; */
 }
 .story_container{
@@ -207,6 +197,3 @@ avatarcontent::before{
   color: #fff;
 }
 
-.css-3zukih{
-  display: block !important;
-}

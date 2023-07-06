@@ -21,13 +21,13 @@ import StarBorder from '@mui/icons-material/StarBorder';
 const Webfour = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
-    justifyContent: "center",
+    // justifyContent: "center",
     gap: theme.spacing(5),
     marginTop: theme.spacing(5),
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
-      alignItems: "center",
-      textAlign: "center",
+      // alignItems: "center",
+      // textAlign: "center",
     },
   }));
   const [open, setOpen] = React.useState(true);
@@ -106,20 +106,14 @@ Benefits of RAW Printing:
           
             <List
       sx={{ width: '100%', maxWidth: 960,border:"1px solid black" }}
-      component="nav"
-      aria-labelledby="nested-list-subheader"
-    
-    >
-    
-     
+      component="nav" aria-labelledby="nested-list-subheader" >
       <ListItemButton onClick={handleClick}>
       <Typography
               variant="body2"
               sx={{
                 fontSize: "19px",
                 color: "black",
-                fontWeight: "bold",
-                
+                fontWeight: "bold",  
               }}
             >
                 Faster printing

@@ -2,7 +2,7 @@ import { Button, styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 // import homeIllustration from "../media/illustration.png";
-// import CustomButton from "./CustomButton";
+import CustomButton from "./CustomButton";
 
 const GetStarted = () => {
   const CustomContainer = styled(Container)(({ theme }) => ({
@@ -12,12 +12,14 @@ const GetStarted = () => {
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
+    
     [theme.breakpoints.down("md")]: {
       height: "auto",
       flexDirection: "column",
       alignItems: "center",
       padding: theme.spacing(3, 3, 0, 3),
       width: "90%",
+
     },
   }));
 
@@ -25,8 +27,9 @@ const GetStarted = () => {
     padding: theme.spacing(10, 0, 10, 0),
     margin: theme.spacing(0, 2, 0, 2),
     [theme.breakpoints.down("md")]: {
-      padding: "0",
+    //  padding:"5px"
     },
+    paddingBottom:"15px"
   }));
 
   return (
@@ -44,12 +47,12 @@ const GetStarted = () => {
             Everything you will be control!
           </Typography>
 
-          {/* <CustomButton
+          <CustomButton
             backgroundColor="#fff"
             color="#17275F"
-            buttonText="Get Started Now"
+            buttonText="Go with this"
             getStartedBtn={true}
-          /> */}
+          />
         </Box>
 
         <img

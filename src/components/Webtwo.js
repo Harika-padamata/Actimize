@@ -87,17 +87,18 @@ const Webtwo = () => {
             fontSize: "18px",
             fontWeight: "500",
             color: "black",
-            textAlign: "center",
+            // textAlign: "center",
+            margin:"30px",
             marginTop:"30px"
           }}
         > 
-        In the digital age, web applications have become an integral part of our daily lives, aiding in our various tasks and interactions. However, one area that continues to pose challenges for developers and users alike is accurate printing from web apps. Ensuring that your web app’s content is faithfully reproduced physically can be a daunting task.
+        In the digital age, web applications have become an integral part of our daily lives, aiding in our various tasks and interactions. one area that continues to pose challenges for developers and users alike is accurate printing from web apps. Ensuring that your web app’s content is faithfully reproduced physically can be a daunting task.
 
 This is where ScriptX from Meadroid comes into play, offering a solution designed to enhance the printing capabilities of your web application.
 
 In many industries and professions, the need for accurate and reliable information and web application printing is crucial. Whether it’s generating invoices, producing shipping labels, or generating legal documents, the output should perfectly reflect the content displayed on the web app.
 
-Without reliable printing capabilities, businesses may encounter financial losses, legal complications, and customer dissatisfaction. To address these concerns, Meadroid developed ScriptX as a comprehensive solution.
+Without reliable printing capabilities, businesses may encounter financial losses, legal complications,  customer dissatisfaction. To address these concerns, Meadroid developed ScriptX as a comprehensive solution.
         </Typography>
 
      

@@ -9,13 +9,13 @@ import CustomButton from "./CustomButton";
 const Webthree = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
-    justifyContent: "center",
+    // justifyContent: "center",
     gap: theme.spacing(5),
     marginTop: theme.spacing(5),
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
-      alignItems: "center",
-      textAlign: "center",
+      // alignItems: "center",
+      // textAlign: "center",
     },
   }));
 

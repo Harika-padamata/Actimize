@@ -77,7 +77,7 @@ const Webfive = () => {
             }}
           >
             <Icon icon="bx:bar-chart-alt-2" color="white" width="55" height="55" />
-            <LargeText>Gain Control</LargeText>
+            <LargeText>Gain </LargeText>
             {/* <SmallText>Ensure resources are used efficiently and with guardrails to align cost to value</SmallText> */}
           </Box>
 
@@ -101,7 +101,7 @@ const Webfive = () => {
             }}
           >
             <Icon icon="streamline:computer-database-raid-storage-code-disk-programming-database-array-hard-disc" color="white" width="55" height="55" />
-            <LargeText>Get Best Practices</LargeText>
+            <LargeText>Get Best Practic</LargeText>
             {/* <SmallText>Monitor and analyze performance & configuration to get the most from Snowflake</SmallText> */}
           </Box>
         </TextFlexbox>
