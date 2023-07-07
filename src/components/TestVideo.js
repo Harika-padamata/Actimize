@@ -1,9 +1,7 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 
-import "../App.css"
-
-function Vedio() {
+function TestVideo() {
   return (
     <div>
          <div style={{position:"relative",zIndex:'0',paddingTop:"200px",paddingBottom:"200px"}}>
@@ -77,4 +75,4 @@ function Vedio() {
   )
 }
 
-export default Vedio
+export default TestVideo
