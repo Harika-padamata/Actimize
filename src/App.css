@@ -3,6 +3,20 @@
    max-width: 1200px ;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .videocomponent{
+    width: 1442px !important;
+    height: auto !important;
+
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .videocomponent{
+    width: 2562px !important;
+    height: auto !important;
+
+  }
+}
 @media only screen and (min-width: 1098px) {
   .story_container{
     padding-left: 6rem;
@@ -61,8 +75,20 @@
     line-height: 5rem;
   }
 }
+.videocomponent{
+  margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    height: 801.172px;
+}
 .content{
-  min-width: 300px;
+  min-width: 280px;
   /* max-width: 480px; */
 }
 .story_container{
