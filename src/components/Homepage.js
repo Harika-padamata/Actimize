@@ -12,10 +12,10 @@ function Homepage() {
     <>
     <Navbar/>
     <Vedio/>
-    {/* <TestVideo/> */}
     <SuccesStory/>
     <Ourservices/>
     <ContactForm/>
+    {/* <TestVideo/> */}
     <Footer/>
     {/* <ImageSlider/> */}
     </>
