@@ -17,10 +17,10 @@ function Vedio() {
                 backgroundPosition:"0% 50%",
                 backgroundImage:'none'
             }}>
-        <video  className='videocomponent' src="../../images/bannervedio.mp4" autoPlay loop muted /> 
-        {/* <video className='videocomponent' loop={true} autoPlay muted >
+        {/* <video  className='videocomponent' src="../../images/bannervedio.mp4" autoPlay loop muted />  */}
+        <video className='videocomponent' loop={true} autoPlay muted >
               <source src="../../images/bannervedio.mp4" type="video/mp4"></source>
-          </video>  */}
+          </video> 
           </div>
           <div style={{marginLeft:'auto',marginRight:'auto',paddingLeft:'15px',paddingRight:'15px'}}>
             <div  style={{
@@ -43,7 +43,7 @@ function Vedio() {
                 textAlign:'center'
             }}>
             <Typography sx={{textAlign:"center", fontFamily:'"Poppins", sans-serif', color:'#fff',fontSize:'42px',lineHeight:'56px',fontWeight:'700'}}>WELCOME TO ACTIMIZE</Typography>
-            <p style={{ fontFamily:'"Lato", Helvetica, Arial, sans-serif', color:'#ffffff',fontSize:'18px',textAlign:"-webkit-center",fontWeight:'300',lineHeight:'1.6'}}>Actimize is an IT consulting and services company whose mission is to harness advanced technologies to devise quality software with interdisciplinary effort and a long-term focus.</p>
+            <p className='content' style={{ fontFamily:'"Lato", Helvetica, Arial, sans-serif', color:'#ffffff',fontSize:'18px',textAlign:"-webkit-center",fontWeight:'300',lineHeight:'1.6'}}>Actimize is an IT consulting and services company whose mission is to harness advanced technologies to devise quality software with interdisciplinary effort and a long-term focus.</p>
             <a style={{
                 position:'relative',
                 display:'inline-block',

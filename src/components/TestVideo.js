@@ -1,76 +1,147 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Typography,styled,Box } from '@mui/material'
 import React from 'react'
+import { Icon } from '@iconify/react';
+
 
 function TestVideo() {
+    const FooterLink = styled("span")(({ theme }) => ({
+        fontSize: "13px",
+        color: "white",
+        fontWeight: "700",
+        cursor: "pointer",
+        "&:hover": {
+          color: "white",
+        },
+      }));
+      const IconBox = styled(Box)(({ theme }) => ({
+        gap: "1rem",
+      }));
   return (
     <div>
-         <div style={{position:"relative",zIndex:'0',paddingTop:"200px",paddingBottom:"200px"}}>
-            <div style={{
-                position:"absolute",
-                zIndex:'-1',
-                inset:"0px",
-                overflow:"hidden",
-                backgroundSize:"cover",
-                backgroundColor:"transparent",
-                backgroundPosition:"0% 50%",
-                backgroundImage:'none'
-            }}>
-        <video  className='videocomponent' src="../../images/bannervedio.mp4" autoPlay loop muted /> 
-        {/* <video className='videocomponent' loop={true} autoPlay muted >
-              <source src="../../images/bannervedio.mp4" type="video/mp4"></source>
-          </video>  */}
-          </div>
-          <div style={{marginLeft:'auto',marginRight:'auto',paddingLeft:'15px',paddingRight:'15px'}}>
-            <div  style={{
-                position:"relative",
-                transform:"translateY(-50px)",
-                marginBottom:"-50px",
-                pointerEvents:'none',
-                justifyContent:'center',
-                display:"flex",
-                flexWrap:"wrap",
-                // marginRight:'-15px',
-                // marginLeft:'-15px'
-            }}>
-                <div className='text-wrapper'  style={{position:"relative",
-                minHeight:'1px',
-                paddingLeft:'15px',
-                paddingRight:'15px',
-                // margin:'50px',
-                pointerEvents:'auto',
-                textAlign:'center'
-            }}>
-            <Typography sx={{textAlign:"center", fontFamily:'"Poppins", sans-serif', color:'#fff',fontSize:'42px',lineHeight:'56px',fontWeight:'700'}}>WELCOME TO ACTIMIZE</Typography>
-            <p style={{ fontFamily:'"Lato", Helvetica, Arial, sans-serif', color:'#ffffff',fontSize:'18px',textAlign:"-webkit-center",fontWeight:'300',lineHeight:'1.6'}}>Actimize is an IT consulting and services company whose mission is to harness advanced technologies to devise quality software with interdisciplinary effort and a long-term focus.</p>
-            <a style={{
-                position:'relative',
-                display:'inline-block',
-                maxWidth:'100%',
-                padding:'15px 40px',
-                fontSize:'16px',
-                fontWeight:'400',
-                letterSpacing:'0.1em',
-                textTransform:'uppercase',
-                border:'2px solid',
-                borderRadius:'35px',
-                textAlign:'center',
-                verticalAlign:'middle',
-                userSelect:'none',
-                transition:'.25s all ease',
-                marginTop:'30px',
-                color:'#fff',alignItems:'center'
-                
-            }}>LEARN MORE </a>
-                </div>
+        <Grid container columns={20} sx={{backgroundColor:'#666666',justifyContent: "space-around",textAlign:'center'}}>
+            <Grid xs={12} sm={10} md={4} lg={4}>
+            <Typography
+              sx={{
+                fontSize: "20px",
+                color: "white",
+                fontWeight: "700",
+                mb: 2,
+              }}
+            >
+            Company
+            </Typography>
+            <FooterLink>Navigate your next</FooterLink>
+            <br />
+            <FooterLink>About Us</FooterLink>
+            <br />
+            <FooterLink>Careers</FooterLink>
+            <br />
+            <FooterLink>ESG</FooterLink>
+            <br />
+            <FooterLink>Investors</FooterLink>
+            <br />
+            <FooterLink>Newsroom</FooterLink>
+            <br />
+            <FooterLink>Alumni</FooterLink>
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
+            <Typography
+              sx={{
+                fontSize: "20px",
+                color: "white",
+                fontWeight: "700",
+                mb: 2,
+              }}
+            >
+           Subsidiaries
+            </Typography>
+            <FooterLink>EdgeVerve Systems</FooterLink>
+            <br />
+            <FooterLink>Actimize BPM</FooterLink>
+            <br />
+            <FooterLink>Actimize Consulting</FooterLink>
+            <br />
+            <FooterLink>Actimize Public Services</FooterLink>
+            <br />
+            <FooterLink>Solutions for Professional Services</FooterLink>
+           
+            <br />
+            <FooterLink>Community Engagement </FooterLink>
+            <br />
+            <FooterLink>Virtual Events Platform </FooterLink>
+            <br />
+            <FooterLink>QR Codes for Event Check-In </FooterLink>
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
+            <Typography
+              sx={{
+                fontSize: "20px",
+                color: "white",
+                fontWeight: "700",
+                mb: 2,
+              }}
+            >
+          Programs
+            </Typography>
+            <FooterLink>Actimize Foundation</FooterLink>
+            <br />
+            <FooterLink>Actimize Foundation India</FooterLink>
+            <br />
+            <FooterLink>Actimize Science Foundation</FooterLink>
+            <br />
+            <FooterLink>Actimize Hobby Events</FooterLink>
+            <br />
+            <FooterLink>Actimize Leadership Institute</FooterLink>
 
-            </div>
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
+            <Typography
+              sx={{
+                fontSize: "20px",
+                color: "white",
+                fontWeight: "700",
+                mb: 2,
+              }}
+            >
+           Support
+            </Typography>
+            <FooterLink>Terms of Use</FooterLink>
+            <br />
+            <FooterLink> Privacy Statement  </FooterLink>
+            <br />
+            <FooterLink> Cookie Policy </FooterLink>
+            <br />
+            <FooterLink> Safe Harbour Provision</FooterLink>
+            <br />
+            <FooterLink>Site Map </FooterLink>
+            <br />
+           
+            <FooterLink>Modern Slavery Statement </FooterLink>
 
-          </div>
-        </div>
-        {/* <Vedio sx={{margin:"auto",position:"absolute",zIndex:"-1",top:"50%",left:"0%",visibility:"visivle",opacity:"1",width:"auto",height:"751px",transform:"translate(0%, -50%)"}}>
-            <source src='../vedio.mp4' type='vedio/'></source>
+            <br />
+            <FooterLink>Payment Guide for Suppliers </FooterLink>
 
-        </Vedio> */}
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
+            <Typography
+              sx={{
+                fontSize: "20px",
+                color: "white",
+                fontWeight: "700",
+                mb: 2,
+              }}
+            >
+             Connect With Us
+            </Typography>
+            <IconBox >
+              <Icon icon="gg:facebook" width="35" height="35" color="white" />
+              <Icon icon="fe:messanger" width="35" height="35" color="white" />
+              <Icon  icon="basil:linkedin-solid"width="35" height="35" color="white" />
+              <Icon icon="mdi:twitter" width="35" height="35"  color="white" />
+            </IconBox>   
+            </Grid>
+
+        </Grid>
     </div>
   )
 }

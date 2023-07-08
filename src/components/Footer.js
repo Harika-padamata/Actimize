@@ -1,48 +1,25 @@
-import { styled, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
-import React from "react";
+import { Grid, Typography,styled,Box } from '@mui/material'
+import React from 'react'
 import { Icon } from '@iconify/react';
 
-// import fbIcon from "../media/fbicon.png";
-// import twitterIcon from "../media/twittericon.png";
-// import linkedinIcon from "../media/linkedinicon.png";
 
-const Footer = () => {
-  const CustomContainer = styled(Box)(({ theme }) => ({
-    display: "flex",
-    justifyContent: "space-around",
-    gap: theme.spacing(5),
-    [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-      textAlign: "center",
-    },
-  }));
-
-  const IconBox = styled(Box)(({ theme }) => ({
-    display: "flex",
-    alignItems: "center",
-    gap: "1rem",
-    [theme.breakpoints.down("sm")]: {
-      justifyContent: "center",
-    },
-  }));
-
-  const FooterLink = styled("span")(({ theme }) => ({
-    fontSize: "13px",
-    color: "white",
-    fontWeight: "700",
-    cursor: "pointer",
-    "&:hover": {
-      color: "white",
-    },
-  }));
-
+function Footer() {
+    const FooterLink = styled("span")(({ theme }) => ({
+        fontSize: "13px",
+        color: "white",
+        fontWeight: "700",
+        cursor: "pointer",
+        "&:hover": {
+          color: "white",
+        },
+      }));
+      const IconBox = styled(Box)(({ theme }) => ({
+        gap: "1rem",
+      }));
   return (
-    <Box sx={{ py: 3,backgroundColor: "#666666" }}>
-    
-        <CustomContainer sx={{m:2}}>
-          
-          <Box >
+    <div>
+        <Grid container columns={20} sx={{backgroundColor:'#666666',justifyContent: "space-around",textAlign:'center'}}>
+            <Grid xs={12} sm={10} md={4} lg={4}>
             <Typography
               sx={{
                 fontSize: "20px",
@@ -53,7 +30,6 @@ const Footer = () => {
             >
             Company
             </Typography>
-
             <FooterLink>Navigate your next</FooterLink>
             <br />
             <FooterLink>About Us</FooterLink>
@@ -67,10 +43,8 @@ const Footer = () => {
             <FooterLink>Newsroom</FooterLink>
             <br />
             <FooterLink>Alumni</FooterLink>
-            
-          </Box>
-
-          <Box>
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
             <Typography
               sx={{
                 fontSize: "20px",
@@ -81,7 +55,6 @@ const Footer = () => {
             >
            Subsidiaries
             </Typography>
-
             <FooterLink>EdgeVerve Systems</FooterLink>
             <br />
             <FooterLink>Actimize BPM</FooterLink>
@@ -98,10 +71,8 @@ const Footer = () => {
             <FooterLink>Virtual Events Platform </FooterLink>
             <br />
             <FooterLink>QR Codes for Event Check-In </FooterLink>
-           
-          </Box>
-
-          <Box>
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
             <Typography
               sx={{
                 fontSize: "20px",
@@ -112,7 +83,6 @@ const Footer = () => {
             >
           Programs
             </Typography>
-
             <FooterLink>Actimize Foundation</FooterLink>
             <br />
             <FooterLink>Actimize Foundation India</FooterLink>
@@ -122,9 +92,9 @@ const Footer = () => {
             <FooterLink>Actimize Hobby Events</FooterLink>
             <br />
             <FooterLink>Actimize Leadership Institute</FooterLink>
-            
-          </Box>
-          <Box>
+
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
             <Typography
               sx={{
                 fontSize: "20px",
@@ -151,10 +121,8 @@ const Footer = () => {
             <br />
             <FooterLink>Payment Guide for Suppliers </FooterLink>
 
-          
-          </Box>
-
-          <Box>
+            </Grid>
+            <Grid xs={12} sm={10} md={4} lg={4}>
             <Typography
               sx={{
                 fontSize: "20px",
@@ -171,10 +139,11 @@ const Footer = () => {
               <Icon  icon="basil:linkedin-solid"width="35" height="35" color="white" />
               <Icon icon="mdi:twitter" width="35" height="35"  color="white" />
             </IconBox>   
-          </Box>
-        </CustomContainer>
-     
-    </Box>
-  );
-};
-export default Footer;
+            </Grid>
+
+        </Grid>
+    </div>
+  )
+}
+
+export default Footer
